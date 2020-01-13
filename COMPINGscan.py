@@ -13,7 +13,7 @@ def serial_ports():
     elif sys.platform.startswith('darwin'):
         ports = glob.glob('/dev/tty.*')
     else:
-        raise EnvironmentError('COM AINT WORKIN FUCK THE POLICE')
+        raise EnvironmentError('COM AINT WORKIN')
     result = []
     for port in ports:
         try:
